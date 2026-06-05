@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAÉ 4-01 — Régression linéaire multiple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../index.html" class="brand">Loris Bouet<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../formation.html">Ma formation</a></li>
+        <li><a href="../projets.html" class="active">Mes projets</a></li>
+        <li><a href="../alternance.html">Mon alternance</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Accueil</a> · <a href="../projets.html">Mes projets</a> · SAÉ 4-01</div>
+      <h1>SAÉ 4-01 · Régression linéaire multiple</h1>
+      <p>Expliquer ou prédire une variable quantitative à partir de plusieurs facteurs — Analyse du sommeil.</p>
+      <div class="tags">
+        <span class="tag">R</span>
+        <span class="tag">Régression linéaire</span>
+        <span class="tag">Sélection de variables</span>
+        <span class="tag">Bootstrap</span>
+        <span class="tag">Validation croisée</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container content">
+
+      <h2>Contexte</h2>
+      <p>L'objectif de cette SAÉ est de mettre en œuvre l'ensemble des étapes d'une analyse statistique pour étudier et prédire une variable quantitative d'intérêt. Le travail couvre la <strong>recherche du sujet et des données</strong>, la <strong>préparation</strong>, l'analyse descriptive, la modélisation (choix de modèle et interprétation) et la restitution.</p>
+
+      <h2>Notre sujet : analyse du sommeil</h2>
+      <p>En équipe, nous avons choisi de travailler sur des données portant sur la <strong>qualité du sommeil</strong>. La problématique : identifier et quantifier les facteurs (durée, activité physique, stress, hygiène de vie, etc.) qui expliquent la qualité du sommeil afin de pouvoir la prédire.</p>
+
+      <h2>Démarche</h2>
+      <ol>
+        <li><strong>Recherche d'un jeu de données ouvert</strong> et fiche descriptive du sujet</li>
+        <li><strong>Préparation et nettoyage</strong> des données, recodages, gestion des valeurs aberrantes</li>
+        <li><strong>Statistiques descriptives</strong> univariées et bivariées sur la variable d'intérêt et les variables explicatives</li>
+        <li><strong>Modélisation</strong> par régression linéaire multiple avec la fonction <code>lm</code> sous R</li>
+        <li><strong>Validation</strong> du modèle : graphiques diagnostics, étude des résidus, points influents, sélection automatique de variables, validation croisée et bootstrap</li>
+        <li><strong>Interprétation</strong> et conclusion sur la problématique</li>
+      </ol>
+
+      <h2>Méthodes statistiques mobilisées</h2>
+      <ul>
+        <li>Estimation des paramètres par la méthode des moindres carrés</li>
+        <li>Tests et intervalles de confiance sur les coefficients</li>
+        <li>Indicateurs de qualité du modèle (R², R² ajusté, RMSE)</li>
+        <li>Sélection de variables (méthodes stepwise)</li>
+        <li>Méthodes de ré-échantillonnage : bootstrap et validation croisée</li>
+      </ul>
+
+      <h2>Livrables</h2>
+      <ul>
+        <li>Notebook R reproductible (préparation, modélisation, résultats)</li>
+        <li>Rapport écrit avec interprétation et conclusion</li>
+        <li>Présentation orale en équipe</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>Compétences développées :</strong> mise en œuvre complète d'une étude statistique, esprit critique sur la validité d'un modèle, capacité à communiquer un résultat technique à un public non spécialiste.
+      </div>
+
+      <h2>Rapport du projet</h2>
+      <div class="pdf-wrap">
+        <iframe class="pdf-embed" src="../assets/pdfs/sae-4-01-rapport.pdf" title="Rapport SAÉ 4-01 Analyse du sommeil"></iframe>
+        <div class="btn-row">
+          <a href="../assets/pdfs/sae-4-01-rapport.pdf" download class="btn btn-outline">Télécharger le rapport ↓</a>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <a href="../projets.html" class="btn btn-outline">← Retour aux projets</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">Loris Bouet<span class="dot">.</span></span>
+      Portfolio · BUT Science des Données — IUT de Vannes
+    </div>
+  </footer>
+
+</body>
+</html>

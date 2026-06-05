@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAÉ 3-01 — Échantillonnage & projet Valpena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../index.html" class="brand">Loris Bouet<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../formation.html">Ma formation</a></li>
+        <li><a href="../projets.html" class="active">Mes projets</a></li>
+        <li><a href="../alternance.html">Mon alternance</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Accueil</a> · <a href="../projets.html">Mes projets</a> · SAÉ 3-01</div>
+      <h1>SAÉ 3-01 · Échantillonnage & plan d'expérience</h1>
+      <p>Recueil et analyse de données par échantillonnage ou plan d'expérience — Projet Valpena.</p>
+      <div class="tags">
+        <span class="tag">R</span>
+        <span class="tag">Package sampling</span>
+        <span class="tag">Horvitz-Thompson</span>
+        <span class="tag">ANOVA</span>
+        <span class="tag">Plan factoriel</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container content">
+
+      <h2>Contexte</h2>
+      <p>Cette SAÉ vise à approfondir la notion d'enquête et de sondage, et à différencier le recueil de données par sondage de celui par plan d'expérience. Elle s'articule autour de rappels sur l'échantillonnage à l'aide du package R <em>sampling</em>, de l'analyse d'articles scientifiques, d'une mise en pratique sur données réelles et d'un cours sur les plans d'expérience.</p>
+
+      <h2>Le projet Valpena</h2>
+      <p>Le <strong>GIS Valpena</strong> est un programme scientifique visant à acquérir, traiter et représenter des données spatiotemporelles sur les activités de pêche professionnelle. Notre travail, réalisé en équipe de 4, a consisté à restituer de manière claire et synthétique :</p>
+      <ul>
+        <li>les <strong>objectifs</strong> du projet Valpena ;</li>
+        <li>la <strong>méthode d'échantillonnage</strong> utilisée pour la collecte des données ;</li>
+        <li>les principaux <strong>indicateurs</strong> calculés dans le cadre du projet et leur interprétation.</li>
+      </ul>
+
+      <h2>Méthodes mobilisées</h2>
+      <ul>
+        <li>Différentes méthodes d'échantillonnage : aléatoire simple, à probabilités inégales, stratifié, en grappes</li>
+        <li>Notion de probabilité d'inclusion et estimateur de Horvitz-Thompson</li>
+        <li>Plans d'expérience factoriels et analyse par ANOVA</li>
+        <li>Programmation R avec le package <em>sampling</em></li>
+      </ul>
+
+      <div class="info-box">
+        <strong>Compétences développées :</strong> rigueur méthodologique en sondage, esprit critique sur la qualité des données, restitution synthétique d'un protocole scientifique complexe.
+      </div>
+
+      <h2>Rapport du projet</h2>
+      <div class="pdf-wrap">
+        <iframe class="pdf-embed" src="../assets/pdfs/sae-3-01-rapport.pdf" title="Rapport SAÉ 3-01 Valpena"></iframe>
+        <div class="btn-row">
+          <a href="../assets/pdfs/sae-3-01-rapport.pdf" download class="btn btn-outline">Télécharger le rapport ↓</a>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <a href="../projets.html" class="btn btn-outline">← Retour aux projets</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">Loris Bouet<span class="dot">.</span></span>
+      Portfolio · BUT Science des Données — IUT de Vannes
+    </div>
+  </footer>
+
+</body>
+</html>

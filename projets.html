@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes projets — Loris Bouet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand">Loris Bouet<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="formation.html">Ma formation</a></li>
+        <li><a href="projets.html" class="active">Mes projets</a></li>
+        <li><a href="alternance.html">Mon alternance</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Accueil</a> · Mes projets</div>
+      <h1>Mes projets</h1>
+      <p>Une sélection de Situations d'Apprentissage et d'Évaluation (SAÉ) menées dans le cadre du BUT Science des Données. Cliquez sur une carte pour découvrir le détail de chaque projet.</p>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card-grid">
+
+        <a href="projets/sae-3-01.html" class="card">
+          <div class="card-icon">🎣</div>
+          <h3>SAÉ 3-01 · Échantillonnage & plan d'expérience</h3>
+          <p>Projet Valpena : analyse de données spatiotemporelles sur la pêche professionnelle, indicateurs et plans d'échantillonnage.</p>
+          <div class="tags" style="margin-top:1rem">
+            <span class="tag">R</span>
+            <span class="tag">sampling</span>
+            <span class="tag">ANOVA</span>
+          </div>
+          <span class="arrow">Lire le projet →</span>
+        </a>
+
+        <a href="projets/sae-4-01.html" class="card">
+          <div class="card-icon">😴</div>
+          <h3>SAÉ 4-01 · Régression linéaire multiple</h3>
+          <p>Étude et modélisation des facteurs influençant la qualité du sommeil à partir de données réelles.</p>
+          <div class="tags" style="margin-top:1rem">
+            <span class="tag">R</span>
+            <span class="tag">Régression</span>
+            <span class="tag">Bootstrap</span>
+          </div>
+          <span class="arrow">Lire le projet →</span>
+        </a>
+
+        <a href="projets/sae-4-02.html" class="card">
+          <div class="card-icon">⚽</div>
+          <h3>SAÉ 4-02 · Application R-Shiny</h3>
+          <p>Développement d'une application interactive d'analyse multivariée (ACP, clustering) sur des données FIFA.</p>
+          <div class="tags" style="margin-top:1rem">
+            <span class="tag">R-Shiny</span>
+            <span class="tag">ACP</span>
+            <span class="tag">tidyverse</span>
+          </div>
+          <span class="arrow">Voir la démo →</span>
+        </a>
+
+        <a href="projets/sae-5-01.html" class="card">
+          <div class="card-icon">🏢</div>
+          <h3>SAÉ 5-01 · Études statistiques sectorielles</h3>
+          <p>Quatre études dans des domaines variés : agro-alimentaire, bancaire, recherche clinique et marketing (scoring).</p>
+          <div class="tags" style="margin-top:1rem">
+            <span class="tag">Python</span>
+            <span class="tag">R</span>
+            <span class="tag">Tanagra</span>
+            <span class="tag">Scoring</span>
+          </div>
+          <span class="arrow">Lire le projet →</span>
+        </a>
+
+        <a href="projets/sae-5-03.html" class="card">
+          <div class="card-icon">🏆</div>
+          <h3>SAÉ 5-03 · Datathon datamining</h3>
+          <p>Challenge de 2 jours en équipe sur un cas réel d'entreprise partenaire — données confidentielles.</p>
+          <div class="tags" style="margin-top:1rem">
+            <span class="tag">Python</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Machine Learning</span>
+          </div>
+          <span class="arrow">Lire le projet →</span>
+        </a>
+
+        <a href="projets/sae-6-01.html" class="card">
+          <div class="card-icon">📑</div>
+          <h3>SAÉ 6-01 · Poster scientifique sur les sondages</h3>
+          <p>Réalisation d'un poster pour le 14ᵉ Colloque Francophone International sur les Sondages 2026 à Vannes.</p>
+          <div class="tags" style="margin-top:1rem">
+            <span class="tag">Sondages</span>
+            <span class="tag">IA</span>
+            <span class="tag">Recherche</span>
+          </div>
+          <span class="arrow">Lire le projet →</span>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">Loris Bouet<span class="dot">.</span></span>
+      Portfolio · BUT Science des Données — IUT de Vannes
+    </div>
+  </footer>
+
+</body>
+</html>

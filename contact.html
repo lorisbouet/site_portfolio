@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Loris Bouet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand">Loris Bouet<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="formation.html">Ma formation</a></li>
+        <li><a href="projets.html">Mes projets</a></li>
+        <li><a href="alternance.html">Mon alternance</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Accueil</a> · Contact</div>
+      <h1>Me contacter</h1>
+      <p>Retrouvez mon CV et mon profil LinkedIn ci-dessous pour échanger ou en savoir plus sur mon parcours.</p>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container content">
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <h3>📄 Mon CV</h3>
+          <p style="color: var(--text-soft); margin-bottom: 1rem;">Téléchargez mon CV ou consultez-le directement ci-dessous.</p>
+          <a href="assets/CV.pdf" download class="btn">Télécharger le CV ↓</a>
+          <a href="assets/CV.pdf" target="_blank" class="btn btn-outline">Ouvrir dans un onglet ↗</a>
+        </div>
+
+        <div class="contact-card">
+          <h3>💼 Mon LinkedIn</h3>
+          <p style="color: var(--text-soft); margin-bottom: 1rem;">Scannez le QR code ou cliquez sur le lien.</p>
+          <img src="assets/qr_linkedin.png" alt="QR code LinkedIn de Loris Bouet">
+          <div class="btn-row" style="justify-content: center;">
+            <a href="https://www.linkedin.com/in/loris-bouet-41629b297/" target="_blank" rel="noopener" class="btn">Voir mon profil ↗</a>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 style="margin-top: 3rem;">Aperçu du CV</h2>
+      <div class="pdf-wrap">
+        <iframe class="pdf-embed" src="assets/CV.pdf" title="CV de Loris Bouet"></iframe>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">Loris Bouet<span class="dot">.</span></span>
+      Portfolio · BUT Science des Données — IUT de Vannes
+    </div>
+  </footer>
+
+</body>
+</html>

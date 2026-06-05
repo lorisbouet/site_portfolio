@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAÉ 5-03 — Datathon datamining</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../index.html" class="brand">Loris Bouet<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../formation.html">Ma formation</a></li>
+        <li><a href="../projets.html" class="active">Mes projets</a></li>
+        <li><a href="../alternance.html">Mon alternance</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Accueil</a> · <a href="../projets.html">Mes projets</a> · SAÉ 5-03</div>
+      <h1>SAÉ 5-03 · Datathon datamining</h1>
+      <p>Mise en œuvre d'un processus de datamining sur un cas réel d'entreprise — Challenge en équipe sur 2 jours.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">Streamlit</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Datathon</span>
+        <span class="tag">Travail en équipe</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container content">
+
+      <h2>Format du projet</h2>
+      <p>Cette SAÉ prend la forme d'un <strong>Datathon</strong> : un challenge organisé en partenariat avec des entreprises partenaires (en 2026 : Orange Business & Décision et le groupe MAT!). L'événement se déroule sur deux journées, précédées d'un après-midi de préparation, et place les étudiants en situation réelle d'analyse de données pour la prise de décision.</p>
+      <p>Les équipes sont mixtes EMS-VCOD pour combiner les compétences en modélisation statistique et en outils décisionnels. L'objectif : répondre à un cas d'usage métier avec créativité, rigueur et en temps limité.</p>
+
+      <h2>Notre cas d'usage</h2>
+      <div class="info-box warn">
+        🔒 <strong>Données confidentielles.</strong> Le sujet a été proposé par une entreprise partenaire avec des données réelles soumises à un accord de confidentialité. Je ne peux donc pas afficher ici les données, les résultats détaillés ni les visualisations produites.
+      </div>
+
+      <p>Sans entrer dans les détails sensibles, voici ce que notre équipe a pu réaliser :</p>
+      <ul>
+        <li><strong>Compréhension du besoin métier</strong> et reformulation de la problématique en termes data</li>
+        <li><strong>Préparation et nettoyage</strong> d'un volume conséquent de données transactionnelles</li>
+        <li><strong>Analyse exploratoire</strong> pour identifier les patterns et caractéristiques des populations étudiées</li>
+        <li><strong>Modélisation prédictive</strong> avec plusieurs algorithmes de machine learning (régression logistique, arbres, forêts aléatoires)</li>
+        <li><strong>Évaluation des modèles</strong> et choix du plus pertinent au regard du cas d'usage</li>
+        <li><strong>Développement d'une application Streamlit</strong> pour présenter les résultats de manière interactive au jury</li>
+        <li><strong>Restitution finale</strong> devant un jury composé d'enseignants et de data-scientists de l'entreprise partenaire</li>
+      </ul>
+
+      <h2>Résultats — vue d'ensemble</h2>
+      <p>Notre analyse a permis de mettre en évidence des <strong>profils distincts</strong> au sein de la base étudiée et d'identifier les variables les plus discriminantes pour la problématique posée. Le modèle final retenu offrait un bon compromis entre performance prédictive et interprétabilité, ce qui est essentiel pour qu'un commanditaire puisse s'approprier les résultats. L'application Streamlit développée permettait de naviguer entre les différentes étapes de l'analyse et de visualiser les prédictions en direct.</p>
+
+      <h2>Méthodes & outils mobilisés</h2>
+      <ul>
+        <li><strong>Python</strong> : pandas, numpy, scikit-learn, matplotlib, seaborn</li>
+        <li><strong>Streamlit</strong> pour le développement de l'application de restitution</li>
+        <li><strong>Power BI</strong> pour certaines visualisations complémentaires</li>
+        <li>Méthodes statistiques : régression logistique, arbres de décision, forêts aléatoires, méthodes de classification non supervisée</li>
+        <li>Travail collaboratif en équipe mixte EMS / VCOD</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>Compétences développées :</strong> capacité à livrer un projet data complet en temps contraint, gestion des données confidentielles, communication des résultats à un public mixte (technique et métier), travail en équipe pluridisciplinaire.
+      </div>
+
+      <div class="btn-row">
+        <a href="../projets.html" class="btn btn-outline">← Retour aux projets</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">Loris Bouet<span class="dot">.</span></span>
+      Portfolio · BUT Science des Données — IUT de Vannes
+    </div>
+  </footer>
+
+</body>
+</html>

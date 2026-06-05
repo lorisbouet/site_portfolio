@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAÉ 5-01 — Études statistiques sectorielles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../index.html" class="brand">Loris Bouet<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../formation.html">Ma formation</a></li>
+        <li><a href="../projets.html" class="active">Mes projets</a></li>
+        <li><a href="../alternance.html">Mon alternance</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Accueil</a> · <a href="../projets.html">Mes projets</a> · SAÉ 5-01</div>
+      <h1>SAÉ 5-01 · Études statistiques sectorielles</h1>
+      <p>Mener une étude statistique dans un domaine d'application — Quatre projets dans des secteurs différents.</p>
+      <div class="tags">
+        <span class="tag">R</span>
+        <span class="tag">Python</span>
+        <span class="tag">Tanagra</span>
+        <span class="tag">Scoring</span>
+        <span class="tag">Segmentation</span>
+        <span class="tag">Régression logistique</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container content">
+
+      <h2>Contexte</h2>
+      <p>Cette SAÉ met l'étudiant en situation de mise en place d'une étude statistique au sein d'un secteur d'activité spécifique. L'idée centrale : pour bien analyser des données, il faut comprendre le métier. Quatre domaines d'application sont abordés successivement, chacun avec ses méthodes et ses outils privilégiés.</p>
+
+      <h2>1 · Bancaire — Segmentation clients</h2>
+      <p>À partir de caractéristiques de clients d'une banque, réalisation d'une <strong>segmentation multicanale</strong> pour proposer un Plan d'Actions Marketing : construction d'une typologie client, maquette de suivis d'indicateurs et stratégie maximisant le ROI.</p>
+      <ul>
+        <li>Analyse descriptive et préparation des données</li>
+        <li>Méthodes de segmentation (clustering)</li>
+        <li>Recommandations marketing actionnables</li>
+        <li>Analyses réalisées avec <strong>Tanagra</strong></li>
+      </ul>
+      <div class="pdf-wrap">
+        <h3>Rapport — Bancaire</h3>
+        <iframe class="pdf-embed" src="../assets/pdfs/sae-5-01-bancaire.pdf" title="Rapport bancaire"></iframe>
+        <div class="btn-row">
+          <a href="../assets/pdfs/sae-5-01-bancaire.pdf" download class="btn btn-outline">Télécharger le rapport ↓</a>
+        </div>
+      </div>
+
+      <h2>2 · Agro-alimentaire — Tests consommateurs</h2>
+      <p>Étude statistique sur des <strong>tests consommateurs</strong> portant sur 8 produits alimentaires pour chiens. L'objectif : identifier les produits préférés et comprendre les choix des consommateurs à partir des évaluations.</p>
+      <ul>
+        <li>Data visualisation et analyse descriptive multivariée</li>
+        <li>Modèle statistique de comparaisons par paires</li>
+        <li>Sélection des meilleurs produits sur critères objectifs</li>
+      </ul>
+      <div class="pdf-wrap">
+        <h3>Rapport — Agro-alimentaire</h3>
+        <iframe class="pdf-embed" src="../assets/pdfs/sae-5-01-agro.pdf" title="Rapport agro-alimentaire"></iframe>
+        <div class="btn-row">
+          <a href="../assets/pdfs/sae-5-01-agro.pdf" download class="btn btn-outline">Télécharger le rapport ↓</a>
+        </div>
+      </div>
+
+      <h2>3 · Recherche clinique</h2>
+      <p>Initiation aux <strong>statistiques en santé</strong> et à la planification d'études cliniques :</p>
+      <ul>
+        <li>Présentation du domaine de la santé et des statistiques associées</li>
+        <li>Pourquoi planifier ? Randomisation et sources de biais</li>
+        <li>Calcul du nombre de sujets nécessaires : tests statistiques et puissance</li>
+        <li>Mise en pratique sur données réelles avec <strong>R</strong></li>
+      </ul>
+
+      <h2>4 · Marketing — Construction d'un score</h2>
+      <p>C'est le projet phare lié à ma <strong>spécialité marketing</strong>. Objectif : découvrir et mettre en œuvre la méthodologie de construction d'un <strong>score</strong> (prédiction d'un événement binaire) dans un contexte de ciblage marketing — ici, la prédiction du <strong>churn bancaire</strong>.</p>
+      <p>Démarche complète :</p>
+      <ul>
+        <li>Cadrage et compréhension du besoin</li>
+        <li>Préparation des données et partitionnement (train/test)</li>
+        <li>Recodages supervisés et non supervisés</li>
+        <li>Modélisation par régression logistique, arbre de décision, forêt aléatoire</li>
+        <li>Évaluation et comparaison des modèles (AUC, matrice de confusion, courbe ROC)</li>
+        <li>Choix du modèle final et des seuils de score</li>
+        <li>Évaluation du <strong>ROI</strong> apporté par le modèle</li>
+        <li>Stratégies de déploiement et monitoring</li>
+      </ul>
+      <p>Projet réalisé en équipe avec <strong>Python</strong> (notebook Jupyter, scikit-learn). Livrables : rapport, soutenance orale et notebook reproductible.</p>
+
+      <div class="info-box">
+        <strong>Compétences développées :</strong> adaptation des méthodes au contexte métier, maîtrise de plusieurs outils (R, Python, Tanagra, SAS), capacité à dialoguer avec un commanditaire, esprit critique sur les biais et limites d'une étude.
+      </div>
+
+      <div class="btn-row">
+        <a href="../projets.html" class="btn btn-outline">← Retour aux projets</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">Loris Bouet<span class="dot">.</span></span>
+      Portfolio · BUT Science des Données — IUT de Vannes
+    </div>
+  </footer>
+
+</body>
+</html>

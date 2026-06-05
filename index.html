@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loris Bouet — Portfolio</title>
+  <meta name="description" content="Portfolio de Loris Bouet, étudiant en BUT Science des Données à l'IUT de Vannes — parcours EMS, spécialité marketing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand">Loris Bouet<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="formation.html">Ma formation</a></li>
+        <li><a href="projets.html">Mes projets</a></li>
+        <li><a href="alternance.html">Mon alternance</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">BUT Science des Données · Parcours EMS</span>
+      <h1>Bonjour, moi c'est<br><span class="accent">Loris Bouet</span></h1>
+      <p>Étudiant en Science des Données à l'IUT de Vannes, passionné par l'analyse, la modélisation statistique et le marketing data-driven.</p>
+      <div class="btn-row" style="justify-content: center;">
+        <a href="projets.html" class="btn">Voir mes projets →</a>
+        <a href="contact.html" class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Explorer le portfolio</h2>
+      <p class="section-subtitle">Quatre sections pour découvrir mon parcours, mes projets et mon expérience professionnelle.</p>
+
+      <div class="card-grid">
+        <a href="formation.html" class="card">
+          <div class="card-icon">🎓</div>
+          <h3>Ma formation</h3>
+          <p>BUT Science des Données à l'IUT de Vannes — parcours EMS, spécialité marketing.</p>
+          <span class="arrow">Découvrir →</span>
+        </a>
+
+        <a href="projets.html" class="card">
+          <div class="card-icon">📊</div>
+          <h3>Mes projets</h3>
+          <p>Sélection de SAÉ : analyses statistiques, modélisation, datathon et applications interactives.</p>
+          <span class="arrow">Voir les projets →</span>
+        </a>
+
+        <a href="alternance.html" class="card">
+          <div class="card-icon">💼</div>
+          <h3>Mon alternance</h3>
+          <p>Expérience professionnelle en alternance chez MOAI — missions, livrables et apprentissages.</p>
+          <span class="arrow">Découvrir →</span>
+        </a>
+
+        <a href="contact.html" class="card">
+          <div class="card-icon">📬</div>
+          <h3>Contact</h3>
+          <p>Mon CV et mon profil LinkedIn pour échanger ou en savoir plus sur mon parcours.</p>
+          <span class="arrow">Me joindre →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">Loris Bouet<span class="dot">.</span></span>
+      Portfolio · BUT Science des Données — IUT de Vannes
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAÉ 4-02 — Application R-Shiny</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../index.html" class="brand">Loris Bouet<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../formation.html">Ma formation</a></li>
+        <li><a href="../projets.html" class="active">Mes projets</a></li>
+        <li><a href="../alternance.html">Mon alternance</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Accueil</a> · <a href="../projets.html">Mes projets</a> · SAÉ 4-02</div>
+      <h1>SAÉ 4-02 · Application R-Shiny</h1>
+      <p>Reporting d'une analyse multivariée — Développement d'une application interactive d'analyse de données FIFA.</p>
+      <div class="tags">
+        <span class="tag">R-Shiny</span>
+        <span class="tag">tidyverse</span>
+        <span class="tag">ggplot2</span>
+        <span class="tag">plotly</span>
+        <span class="tag">ACP</span>
+        <span class="tag">Clustering</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container content">
+
+      <h2>Contexte</h2>
+      <p>L'objectif de cette SAÉ est d'<strong>approfondir les enjeux du reporting</strong> en l'intégrant dans un processus décisionnel, et d'accompagner le choix d'une méthode statistique adaptée pour une analyse exploratoire multivariée. Le projet final consiste à développer une application R-Shiny interactive pour répondre à une problématique métier sur des données réelles.</p>
+
+      <h2>Notre projet : analyse de données FIFA</h2>
+      <p>Nous avons travaillé sur des jeux de données publics de FIFA contenant les statistiques de plusieurs milliers de <strong>joueurs</strong>, <strong>équipes</strong> et <strong>entraîneurs</strong> masculins. L'application développée permet à l'utilisateur :</p>
+      <ul>
+        <li>d'<strong>explorer interactivement</strong> les données via des filtres dynamiques (poste, club, ligue, âge…) ;</li>
+        <li>de visualiser des <strong>statistiques descriptives</strong> univariées et bivariées avec ggplot2 et plotly ;</li>
+        <li>de réaliser une <strong>Analyse en Composantes Principales (ACP)</strong> sur les variables techniques pour identifier les profils de joueurs ;</li>
+        <li>d'effectuer un <strong>clustering</strong> pour regrouper les joueurs aux profils similaires.</li>
+      </ul>
+
+      <h2>Architecture technique</h2>
+      <ul>
+        <li><strong>ui.R</strong> — interface utilisateur avec onglets, widgets de sélection et zones de sortie</li>
+        <li><strong>server.R</strong> — logique réactive : filtres, calculs statistiques, génération des graphiques</li>
+        <li><strong>global.R</strong> — chargement et préparation initiale des données</li>
+        <li><strong>www/</strong> — feuille de style CSS personnalisée et logo IUT de Vannes</li>
+      </ul>
+
+      <h2>Méthodes statistiques mobilisées</h2>
+      <ul>
+        <li>Manipulation de données avec l'écosystème <em>tidyverse</em> (dplyr, tidyr)</li>
+        <li>Visualisation avec <em>ggplot2</em> et graphiques interactifs <em>plotly</em></li>
+        <li>Analyse en Composantes Principales (ACP) — package FactoMineR / factoshiny</li>
+        <li>Classification automatique (clustering hiérarchique, k-means)</li>
+      </ul>
+
+      <h2>Démonstration</h2>
+      <div class="info-box">
+        <strong>L'application est entièrement codée en R et nécessite l'environnement R + RStudio pour être exécutée.</strong> Pour la tester, lancez le fichier <code>app.R</code> ou <code>ui.R</code> dans RStudio puis cliquez sur <em>Run App</em>.
+      </div>
+
+      <p>Voici les principales captures d'écran de l'application :</p>
+      <div class="info-box warn">
+        💡 <strong>Astuce pour intégrer une vraie démo en ligne :</strong> il est possible de déployer gratuitement l'application sur <a href="https://mapremiereapplicationshiny-lorisbouet.shinyapps.io/sae-4-02/" target="_blank">shinyapps.io</a> (compte gratuit, 5 applications, 25 h/mois). Une fois l'app déployée, il suffira de remplacer le bloc ci-dessous par un <code>&lt;iframe src="https://votrenom.shinyapps.io/sae-4-02/"&gt;</code> pour une démonstration en direct.
+      </div>
+
+      <p style="color: var(--text-soft); font-style: italic;">— Captures d'écran à ajouter ici (à venir) —</p>
+
+      <h2>Code source</h2>
+      <p>Le code source complet de l'application (ui.R, server.R, global.R) est disponible dans le dépôt du projet et peut être lancé localement avec R/RStudio.</p>
+
+      <div class="btn-row">
+        <a href="../projets.html" class="btn btn-outline">← Retour aux projets</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">Loris Bouet<span class="dot">.</span></span>
+      Portfolio · BUT Science des Données — IUT de Vannes
+    </div>
+  </footer>
+
+</body>
+</html>
